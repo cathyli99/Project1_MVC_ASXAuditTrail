@@ -1,0 +1,30 @@
+﻿@using Newtonsoft.Json
+@model MvcLab01.ViewModels.Home
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+
+    <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @{
+        var listItems = new List<SelectListItem>()
+{
+new SelectListItem {Text = "AGL", Value = "AGL"},
+new SelectListItem {Text = "BHP", Value = "BHP"},
+new SelectListItem {Text = "HFG", Value = "HFG"},
+new SelectListItem {Text = "BHP", Value = "BHP"},
+new SelectListItem {Text = "SAM", Value = "SAM"},
+new SelectListItem {Text = "SHE", Value = "SHE"},
+new SelectListItem {Text = "TPL", Value = "TPL"}
+};
+        @Html.DropDownListFor(m => m.SecCode, listItems, string.Empty)
+    }
+    @Html.TextBoxFor(model => model.OffsetCount)
+    @Html.TextBoxFor(model => model.RowCount)
+    <button type="submit">Submit</button>
+    <div id="chartdiv"></div>
+    </div>
+}

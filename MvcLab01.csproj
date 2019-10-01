@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>6566267e-b3c7-4cdb-a838-43f827fa0a7a</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+      <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="NuGet.CommandLine" Version="5.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="NuGet.Frameworks" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models2\ASXAuditTrailContext.cs" />
+    <Compile Remove="Models2\Calendar.cs" />
+    <Compile Remove="Models2\Orders.cs" />
+    <Compile Remove="Models2\SecBoard.cs" />
+    <Compile Remove="Models2\Trade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="create-react-app\.gitignore" />
+    <None Remove="create-react-app\README.md" />
+    <None Remove="create-react-app\.nowignore" />
+    <None Remove="create-react-app\public\favicon.ico" />
+    <None Remove="create-react-app\public\index.html" />
+    <None Remove="create-react-app\src\App.css" />
+    <None Remove="create-react-app\src\App.js" />
+    <None Remove="create-react-app\src\App.test.js" />
+    <None Remove="create-react-app\src\index.css" />
+    <None Remove="create-react-app\src\index.js" />
+    <None Remove="create-react-app\src\logo.svg" />
+    <None Remove="create-react-app\src\serviceWorker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="create-react-app\package-lock.json" />
+    <Content Remove="create-react-app\public\manifest.json" />
+    <Content Remove="create-react-app\package.json" />
+  </ItemGroup>
+</Project>
