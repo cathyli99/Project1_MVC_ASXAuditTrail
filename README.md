@@ -24,10 +24,4 @@ JavaScript: charts.js | animated.js | candlestick.js
         <script src="~/js/candlestick.js" asp-append-version="true"></script>   *<<< /js/candlestick.js*
 ```
 ## Add candlestick on a View
-Add <div id="chartdiv"></div> for the candelstick chart to display.
-
-``` Views/index.cshtml
-    <button type="submit">Submit</button>
-    <div id="chartdiv"></div>
-    </div>
-```
+Add ```<div id="chartdiv"></div>``` under /Views/index.cshtml for the candelstick chart to display.
