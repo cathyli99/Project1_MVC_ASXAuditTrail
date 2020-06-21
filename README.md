@@ -25,3 +25,6 @@ JavaScript: charts.js | animated.js | candlestick.js
 ```
 ## Add candlestick on a View
 Add ```<div id="chartdiv"></div>``` under /Views/index.cshtml for the candelstick chart to display.
+
+## Output result
+![candlestick chart] https://github.com/cathyli99/Project1_MVC_ASXAuditTrail/tree/master/img/ITERS_StockCharV1.png
