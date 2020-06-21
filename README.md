@@ -12,19 +12,28 @@ JavaScript: charts.js | animated.js | candlestick.js
 ``` _layout.cshtml
  </environment>
         <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/css/candlestick.css" />                  *<<< /css/candlestick.css*
+        <link rel="stylesheet" href="~/css/candlestick.css" />                  // /css/candlestick.css
     </head>
     <body>
         <header>
             ... ... ...
         <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
         <script src="~/js/core.js" asp-append-version="true"></script>
-        <script src="~/js/charts.js" asp-append-version="true"></script>        *<<< /js/core.js*
-        <script src="~/themes/animated.js" asp-append-version="true"></script>  *<<< /themes/animated.js*
-        <script src="~/js/candlestick.js" asp-append-version="true"></script>   *<<< /js/candlestick.js*
+        <script src="~/js/charts.js" asp-append-version="true"></script>        // /js/core.js
+        <script src="~/themes/animated.js" asp-append-version="true"></script>  // /themes/animated.js
+        <script src="~/js/candlestick.js" asp-append-version="true"></script>   // /js/candlestick.js
 ```
 ## Add candlestick on a View
 Add ```<div id="chartdiv"></div>``` under /Views/index.cshtml for the candelstick chart to display.
 
+## Create an API controller - MarketDataController.cs to GET api/\<controller>/5
+### Raw Data contains {date, openPrice, highestPrice, lowestPrice, closePrice}
+``` MarketDataController.cs
+ [HttpGet("{code}/{offset}/{rows}")]
+        public List<MarketChartPrice> Get(string code, int offset, int rows)
+        {
+            return db.GetMarketChartPricesAsync(code, offset, rows);
+        }
+```
 ## Output result
 ![candlestick chart](https://user-images.githubusercontent.com/13273640/85215530-6dc46600-b3bd-11ea-8e42-6e5c436f7071.png)
