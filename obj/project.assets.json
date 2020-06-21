@@ -12958,11 +12958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cathyli99/Desktop/Training/DotNet/MvcLab01/MvcLab01/MvcLab01.csproj",
+      "projectUniqueName": "/Users/cathyli99/Desktop/Training/DotNet/Project1_MVC_ASXAuditTrail/MvcLab01.csproj",
       "projectName": "MvcLab01",
-      "projectPath": "/Users/cathyli99/Desktop/Training/DotNet/MvcLab01/MvcLab01/MvcLab01.csproj",
+      "projectPath": "/Users/cathyli99/Desktop/Training/DotNet/Project1_MVC_ASXAuditTrail/MvcLab01.csproj",
       "packagesPath": "/Users/cathyli99/.nuget/packages/",
-      "outputPath": "/Users/cathyli99/Desktop/Training/DotNet/MvcLab01/MvcLab01/obj/",
+      "outputPath": "/Users/cathyli99/Desktop/Training/DotNet/Project1_MVC_ASXAuditTrail/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -13028,10 +13028,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

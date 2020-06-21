@@ -1,30 +1,17 @@
 ﻿<Properties StartupConfiguration="{06D19892-1EE0-48D9-ADF7-A7B300B9A799}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/ASXAuditTrailContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
     <Files>
       <File FileName="appsettings.json" Line="13" Column="1" />
-      <File FileName="Models/ASXAuditTrailContext.cs" Line="409" Column="14" />
-      <File FileName="Models/Home.cs" />
-      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Models/ASXAuditTrailContext.cs" />
       <File FileName="Controllers/HomeController.cs" />
-      <File FileName="Models/Calendar.cs" />
-      <File FileName="Models/MarketChartPrice.cs" />
       <File FileName="Controllers/MarketDataController.cs" />
+      <File FileName="Views/Home/Index.cshtml" Line="21" Column="32" />
       <File FileName="Program.cs" />
+      <File FileName="Models/Home.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MvcLab01" expanded="True">
-            <Node name="MvcLab01" expanded="True">
-              <Node name="Controllers" expanded="True" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MvcLab01 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MvcLab01 PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
